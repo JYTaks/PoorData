@@ -13,7 +13,7 @@ public class WebController {
 	@RequestMapping("/index.pd")
 	public ModelAndView index(HttpServletRequest request, HttpServletResponse response) {
 		ModelAndView mav = new ModelAndView();
-		System.out.println("1111111");
+		System.out.println("11111112222");
 		mav.setViewName("main.base");
 		return mav;
 	}
