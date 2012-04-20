@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+	<definition name="main.base" template="/WEB-INF/view/frame/mainBase.jsp">
+		<put-attribute name="layer" value="/WEB-INF/view/common/layerPop.jsp" />
+		<put-attribute name="head" value="/WEB-INF/view/common/head.jsp" />		 
+		<put-attribute name="top" value="/WEB-INF/view/common/top.jsp" />
+		<put-attribute name="login" value="/WEB-INF/view/permission/login.jsp" />		
+		<put-attribute name="banner" value="/WEB-INF/view/banner/banner.jsp" />
+		<put-attribute name="news" value="/WEB-INF/view/post/news.jsp" />
+		<put-attribute name="visitor" value="/WEB-INF/view/post/visit.jsp" />
+		<put-attribute name="knowledge" value="/WEB-INF/view/post/knowledge.jsp" />
+		<put-attribute name="faq" value="/WEB-INF/view/post/faq.jsp" />
+		<put-attribute name="foot" value="/WEB-INF/view/common/foot.jsp" />
+	</definition>
+	
+</tiles-definitions>

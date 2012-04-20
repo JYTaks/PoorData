@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="user">
+
+	<select id="selectUserInfo" parameterType="userParam" resultType="user">
+		SELECT userId, pwd, nickname, email, level, regDate
+		FROM userInfo
+		WHERE userId = #{userId}
+	</select>
+	
+	<select id="selectNicknameCnt" parameterType="userParam" resultType="Integer">
+		SELECT COUNT(1) AS CNT
+		FROM userInfo
+		WHERE nickname = #{joinNickname}
+	</select>
+	
+</mapper>
