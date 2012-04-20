@@ -10,10 +10,10 @@
 </head>
 
 <body onContextMenu="return false;">
-
+<form name="f" id="f">
 <div id="wrap">
 	<!-- layer -->
-	<tiles:insertAttribute name="layer" />
+	<tiles:insertAttribute name="mainLayer" />
 
 	<!-- top -->
 	<tiles:insertAttribute name="top" />
@@ -44,6 +44,7 @@
 	<!-- foot -->
 	<tiles:insertAttribute name="foot" />
 </div>
+</form>
 </body>
 
 </html>

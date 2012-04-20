@@ -26,7 +26,6 @@ public class AjaxController {
 		boolean isDuplicate = false;
 		isDuplicate = userService.dupChkNickname(param);
 
-		System.out.println("<<< isDuplicate : " + isDuplicate);
 		mav.addObject(isDuplicate);
 		return mav;
 	}
