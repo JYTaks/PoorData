@@ -11,6 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.poordata.dto.param.UserParam;
 import com.poordata.service.UserService;
+import com.poordata.util.PdUtil;
 
 @Controller
 public class AjaxController {
@@ -25,6 +26,8 @@ public class AjaxController {
 
 		boolean isDuplicate = false;
 		isDuplicate = userService.dupChkNickname(param);
+
+		PdUtil.getResult(isDuplicate, param.getResultType());
 
 		mav.addObject(isDuplicate);
 		return mav;

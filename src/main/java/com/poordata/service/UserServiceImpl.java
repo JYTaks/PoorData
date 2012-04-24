@@ -27,6 +27,9 @@ public class UserServiceImpl implements UserService {
 				result = true;
 			}
 
+			log.error("ERROR");
+			log.info("INFO");
+			log.debug("DEBUG");
 		} catch (Exception e) {
 			log.error("ERR, {}", e.getMessage());
 			e.printStackTrace();

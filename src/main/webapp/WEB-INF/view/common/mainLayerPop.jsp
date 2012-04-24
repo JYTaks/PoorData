@@ -1,3 +1,4 @@
+<%@page import="com.poordata.util.PropUtil"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <div id="layer">
 </div>
@@ -23,7 +24,7 @@
 		<td width="">Nickname</td>
 		<td align="left">
 			<input type="text" style="width:205px;" id="joinNickname" name="joinNickname">
-			<span class="button medium"><a href="#"  onclick="Common.ajax('/ajax/dupChkNickname.pd?joinNickname='+$('#joinNickname').val(),'GET', 'Common.successAjax')">중복체크</a></span>
+			<span class="button medium"><a href="#"  onclick="Common.ajax('<%=PropUtil.getWebUrl() %>/ajax/dupChkNickname.pd?joinNickname='+$('#joinNickname').val(),'GET', 'Common.successAjax')">중복체크</a></span>
 		</td>
 	</tr>
 	<tr>

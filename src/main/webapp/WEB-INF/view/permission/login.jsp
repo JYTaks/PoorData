@@ -1,3 +1,4 @@
+<%@page import="com.poordata.util.PropUtil"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <div id="login">
 	<table>
@@ -8,7 +9,11 @@
 	</tr>
 	<tr height="25px">
 		<td><input type="password" style="width:200px" value=""></td>
-		<td><span class="button medium"><a href="#">LOGIN</a></span></td>
+		<td>
+			<span class="button medium">
+				<a href="#" onclick="Common.ajax('<%=PropUtil.getWebUrl() %>/ajax/dupChkNickname.pd?joinNickname='+$('#joinNickname').val(),'GET', 'Common.successAjax')">LOGIN</a>
+			</span>
+		</td>
 	</tr>
 	<tr>
 		<th colspan="2">
