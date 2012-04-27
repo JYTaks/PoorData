@@ -7,5 +7,7 @@
 		<li>News3</li>
 		<li>News4</li>
 		<li>News5</li>
+		<li>News5</li>
+		<li>News5</li>
 	</ul>
 </div>

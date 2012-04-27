@@ -14,7 +14,7 @@ var Perm = {
 		$('#layer').fadeOut('slow');
 	},
 	
-	dupChkNickname : function(){
-		
+	dupChkNickname : function(jsonData){
+		alert(jsonData);
 	}
 };

@@ -9,7 +9,7 @@
 	<title>PoorData</title>
 </head>
 
-<body onContextMenu="return false;">
+<body onContextMenu="return true;">
 <form name="f" id="f">
 <div id="wrap">
 	<!-- layer -->

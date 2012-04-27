@@ -7,5 +7,7 @@
 		<li>MongoDB</li>
 		<li>Phython</li>
 		<li>Spring Batch</li>
+		<li>Spring Batch</li>
+		<li>Spring Batch</li>
 	</ul>
 </div>
