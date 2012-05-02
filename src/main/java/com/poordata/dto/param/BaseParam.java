@@ -13,5 +13,4 @@ public class BaseParam extends StaticVariable {
 	public void setResultType(String resultType) {
 		this.resultType = resultType;
 	}
-
 }

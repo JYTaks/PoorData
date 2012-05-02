@@ -9,4 +9,11 @@ public interface UserService {
 	 * @return
 	 */
 	Boolean dupChkNickname(UserParam param);
+
+	/**
+	 * 이메일 중복 체크
+	 * @param param
+	 * @return
+	 */
+	Boolean dupChkEmail(UserParam param);
 }

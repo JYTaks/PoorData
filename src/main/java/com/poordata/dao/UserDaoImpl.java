@@ -16,4 +16,8 @@ public class UserDaoImpl extends SqlSessionDaoSupport implements UserDao {
 	public int selectNicknameCnt(UserParam param) {
 		return (Integer) getSqlSession().selectOne("user.selectNicknameCnt", param);
 	}
+
+	public int selectEmailCnt(UserParam param) {
+		return (Integer) getSqlSession().selectOne("user.selectEmailCnt", param);
+	}
 }

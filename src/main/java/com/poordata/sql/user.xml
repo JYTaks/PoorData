@@ -15,4 +15,9 @@
 		WHERE nickname = #{joinNickname}
 	</select>
 	
+	<select id="selectEmailCnt" parameterType="userParam" resultType="Integer">
+		SELECT COUNT(1) AS CNT
+		FROM userInfo
+		WHERE email = #{joinEmail}
+	</select>
 </mapper>

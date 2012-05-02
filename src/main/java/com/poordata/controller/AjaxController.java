@@ -14,7 +14,7 @@ import com.poordata.service.UserService;
 import com.poordata.util.PdUtil;
 
 @Controller
-@RequestMapping("/ajax/")
+@RequestMapping("/ajax")
 public class AjaxController {
 
 	@Autowired
@@ -24,12 +24,26 @@ public class AjaxController {
 	public @ResponseBody
 	Object dupChkNickname(HttpServletRequest request, HttpServletResponse response,
 			@ModelAttribute("param") UserParam param) {
+		Object obj = null;
 
 		boolean isDuplicate = false;
 		isDuplicate = userService.dupChkNickname(param);
 
-		Object obj = null;
 		obj = PdUtil.getResult(isDuplicate, param.getResultType());
+		return obj;
+	}
+
+	@RequestMapping("dupChkEmail.pd")
+	public @ResponseBody
+	Object dupChkEmail(HttpServletRequest request, HttpServletResponse response,
+			@ModelAttribute("param") UserParam param) {
+		Object obj = null;
+
+		boolean isDuplicate = false;
+		isDuplicate = userService.dupChkEmail(param);
+
+		obj = PdUtil.getResult(isDuplicate, param.getResultType());
+
 		return obj;
 	}
 }

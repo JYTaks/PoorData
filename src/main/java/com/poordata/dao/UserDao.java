@@ -18,4 +18,11 @@ public interface UserDao {
 	 * @return
 	 */
 	int selectNicknameCnt(UserParam param);
+
+	/**
+	 * 이메일 카운트 조회 (이메일 중복 체크)
+	 * @param param
+	 * @return
+	 */
+	int selectEmailCnt(UserParam param);
 }

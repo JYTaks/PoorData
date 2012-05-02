@@ -26,10 +26,22 @@ public class UserServiceImpl implements UserService {
 			if (cnt > 0) {
 				result = true;
 			}
+		} catch (Exception e) {
+			log.error("ERR, {}", e.getMessage());
+			e.printStackTrace();
+		}
+		return result;
+	}
 
-			log.error("ERROR");
-			log.info("INFO");
-			log.debug("DEBUG");
+	public Boolean dupChkEmail(UserParam param) {
+		boolean result = false;
+		try {
+			int cnt = 0;
+			cnt = userDao.selectEmailCnt(param);
+
+			if (cnt > 0) {
+				result = true;
+			}
 		} catch (Exception e) {
 			log.error("ERR, {}", e.getMessage());
 			e.printStackTrace();
